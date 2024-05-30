@@ -6,7 +6,7 @@ function Nav() {
   let tags = ["Home", "About Us", "Products", "Contact Us"];
 
   return (
-    <div className="flex justify-between">
+    <div className="flex items-center justify-between max-container">
       <a href="/">
         <img
           src={headerLogo}
@@ -14,12 +14,17 @@ function Nav() {
           className="m-0 h-[29px] w-[129px]"
         />
       </a>
-      <ul>
-        <li>
-          {tags.map((tag) => (
-            <a href="/">{tag}</a>
-          ))}
-        </li>
+      <ul className="flex flex-1 items-center justify-center gap-16">
+        {tags.map((tag) => (
+          <li>
+            <a
+              href="/"
+              className="font-montserrat text-lg leading-normal text-slate-gray"
+            >
+              {tag}
+            </a>
+          </li>
+        ))}
       </ul>
       <div className="p-4 pt-2 font-montserrat font-normal leading-normal text-red-200">
         <a href="/">Sign in</a>
