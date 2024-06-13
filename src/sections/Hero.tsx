@@ -11,6 +11,7 @@ function Hero() {
   return (
     <section
       id="home"
+      data-testid="hero"
       className="max-container flex w-full flex-col gap-10 xl:flex-row"
     >
       <div className="max-xl:padding-x relative pt-28 xl:mt-24 xl:w-2/5">
